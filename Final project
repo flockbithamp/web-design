@@ -1,0 +1,50 @@
+Client: 
+		=> Background video in the homepage
+		=> Webapp should contain 5 web pages(HOME, ABOUT US, CONTACT US, GALLERY, STUDENT PORTAL)
+		=> Client already told us about the UI part.
+
+Software company:
+	   => Code all these 3 things(required by Client)
+	   => Sent the code to the client.(ALPHA VERSION)
+	   => Client will review it.
+	   => Suppose there requirements changed:
+	     - Webapp should contain 3 web pages(HOME, GALLERY, CONTACT US)
+	     - Changes in UI.
+	   => Sent the code to the client again.(BETA VERSION)
+	   => Client will review it again. 
+	   => Client told you to make some more changes.
+	   => You will make changes and send updated code to the client & client accepted it.
+	   => So the version of code which client has accepted is called FINAL VERSION.
+
+FINAL PROJECT:
+ => Alpha Version: Create a webapp (Implement only 2  in this version)
+ => Beta Version: Take the code of ALPHA version (Implement other 2 functionalities)
+ => Final Version: Take the code of BETA version (Implement other 1 functionalities)
+
+- final_project
+  - alpha
+  - beta
+  - final 
+  - README.txt
+
+Inside README.txt: 
+   => Alpha version: func1, func2
+   => Beta version: func3, func4
+   => Final version: func5
+
+Eg:
+README.txt
+1. Alpha version: Created containers for images and videos, Added video to the homepage.
+2. Beta version: Added animation, added logo image
+3. Final version: Integrate responsiveness.
+
+
+
+
+
+
+
+
+
+
+
