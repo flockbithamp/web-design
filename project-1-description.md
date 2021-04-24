@@ -12,7 +12,13 @@
 - Install Visual code: 
    - Windows 10: https://www.youtube.com/watch?v=MlIzFUI1QGA 
    - MAC: https://www.youtube.com/watch?v=tCfbi5PF1y0
-- Create a folder in Desktop:
+- Create a folder in Desktop having name: bookstore:
    - Window 10:https://www.youtube.com/watch?v=9JCV8QO9180
    - Mac:https://www.youtube.com/watch?v=W2p3c96yVGo
-  
+- Open the bookstore folder in visual code:
+   - https://www.youtube.com/watch?v=iIibgEg2Bw0
+- Install NodeJs: 
+   - Window 10:https://www.youtube.com/watch?v=AuCuHvgOeBY
+   - Mac:https://www.youtube.com/watch?v=TQks1p7xjdI
+- We are good to go for development.
+- 
