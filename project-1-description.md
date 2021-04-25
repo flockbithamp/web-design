@@ -20,5 +20,11 @@
 - Install NodeJs: 
    - Window 10:https://www.youtube.com/watch?v=AuCuHvgOeBY
    - Mac:https://www.youtube.com/watch?v=TQks1p7xjdI
-- We are good to go for development.
-- 
+- Install express.js: https://expressjs.com/en/starter/installing.html
+
+
+## Begin with Bookstore app:
+- Create a folder(frontend) inside bookstore folder
+
+
+   
