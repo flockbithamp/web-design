@@ -26,5 +26,10 @@
 ## Begin with Bookstore app:
 - Create a folder(frontend) inside bookstore folder
 
+## Backend:
+- Create a login system
+  - Login
+  - SignUp
+
 
    
