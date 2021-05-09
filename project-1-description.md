@@ -31,5 +31,13 @@
   - Login
   - SignUp
 
+## NEXT WEEK:
+- Add the image uploading functionality in the backend for addBook api.
+- Create UI for Update book.
+- Add backend logics for Update book.
+- Create UI for Delete book.
+- Add backend logics for Delete book.
+- Validation and security bug fixes.
+- Comment our backend API.
 
    
