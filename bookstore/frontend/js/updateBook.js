@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+    var credential = localStorage.getItem('credentialCheck');
+    if (credential == 'false' || credential == null){
+        location.href="login.html";
+    }
     getAllBooks();
     updateBook();
 });
@@ -23,16 +27,19 @@ function updateBook(){
         var bookName = $("#updateBookName").val();
         var amazonUrl = $("#updateAmazonUrl").val();
         var bookId = $("#updateBookFormId").val();
-        console.log("bookId :>", bookId)
-        var url = "http://localhost:5555/updateBook/" + bookId;
-        var data = {"bookName": bookName, "amazonUrl": amazonUrl};
-        $.post({url: url, data: data, success: function(data){
-            if(data.result == true){
-                alert("Book Updated!");
-                location.href="updateBook.html";
-            }else{
-                alert("Book Updation Failed!");
-            }
-          }});
+        if(bookName !== '' &&  amazonUrl !== ''){
+            var url = "http://localhost:5555/updateBook/" + bookId;
+            var data = {"bookName": bookName, "amazonUrl": amazonUrl};
+            $.post({url: url, data: data, success: function(data){
+                if(data.result == true){
+                    alert("Book Updated!");
+                    location.href="updateBook.html";
+                }else{
+                    alert("Book Updation Failed!");
+                }
+            }});
+        }else{
+            alert("BookName and AmazonUrl are mandatory fields!");
+        }
     });
 }

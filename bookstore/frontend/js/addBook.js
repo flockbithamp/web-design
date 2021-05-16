@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+    var credential = localStorage.getItem('credentialCheck');
+    if (credential == 'false' || credential == null){
+        location.href="login.html";
+    }
     addBook();
 });
 
@@ -6,9 +10,9 @@ function addBook(){
     $("#uploadBook").click(function(){
         var bookName = $("#bookName").val();
         var amazonUrl = $("#amazonURL").val();
-        var form_data = new FormData();
-        var img = $('#bookImage')[0].files;
-        if (img.length > -1){
+        if(bookName !== '' &&  amazonUrl !== ''){
+            var form_data = new FormData();
+            var img = $('#bookImage')[0].files;
             form_data.append("bookName", bookName);
             form_data.append("amazonUrl", amazonUrl);
             form_data.append("img", img);
@@ -22,7 +26,7 @@ function addBook(){
                 }
             }});
         }else{
-            alert("Image is also required!");
+            alert("BookName and AmazonUrl are mandatory fields!");
         }
         
     });

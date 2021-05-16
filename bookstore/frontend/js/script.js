@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+    var credential = localStorage.getItem('credentialCheck');
+    if (credential == 'false' || credential == null){
+        location.href="login.html";
+    }
     getBookName();
     getAllBooks();
 });

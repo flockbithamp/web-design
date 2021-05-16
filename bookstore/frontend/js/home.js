@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+    var credential = localStorage.getItem('credentialCheck');
+    if (credential == 'false' || credential == null){
+        location.href="login.html";
+    }
     getBookName();
     getAllBooks();
 });
@@ -14,7 +18,9 @@ function getBookName(){
                     $("#books").append(
                         '<div class="col-md-3">' +
                             '<div class="card">' +
-                                '<img src="http://localhost:5555/'+ data["result"]["imageName"] +'" class="card-img-top" alt="...">'+
+                                '<div style="width:15rem;">' +
+                                    '<img src="http://localhost:5555/'+ data["result"]["imageName"] +'" class="card-img-top img-responsive" alt="...">'+
+                                '</div>' +
                                 '<div class="card-body">' +
                                     '<h5 class="card-title">'+ data["result"]["bookName"] +'</h5>' +
                                     '<a href="'+ data["result"]["amazonUrl"] +'" target="_blank">Go to Amazon</a>'+

@@ -13,8 +13,10 @@ function getLoginCredentials(){
         var data = {"username": username, "password": password};
         $.post({url: url, data: data, success: function(data){
             if(data.result == true){
+                localStorage.setItem('credentialCheck', 'true');
                 location.href="home.html";
             }else{
+                localStorage.setItem('credentialCheck', 'false');
                 alert("Login Failed!!!!!");
             }
           }});

@@ -16,7 +16,9 @@
 <body>
   <nav class="navbar navbar-expand-md fixed-top  bg-color-green">
     <div class="container-fluid">
-      <a class="navbar-brand" href="home.html">Book Store</a>
+      <a class="navbar-brand" href="home.html">
+        <img src="images/book_logo.png" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,14 +43,26 @@
       </div>
     </div>
   </nav>
-    <div class="container-fluid bg-color-white text-center" style="margin-top: 5rem;">
-        <h1 style="margin: 0 0 4rem 0;">Delete Book</h1>
-    </div>
-
-    <footer class="footer mt-auto py-3 bg-color-green text-center">
-        <div class="container">
-          <span >@2021 Bookstore</span>
-        </div>
-    </footer>
+  <div class="container-fluid bg-color-white text-center" style="margin-top: 5rem;">
+    <h1 style="margin: 0 0 4rem 0;">Delete Book</h1>
+    <table id="deleteBookTable" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Book Name</th>
+          <th scope="col">Amazon URL</th>
+          <th scope="col">Image</th>
+          <th scope="col">Delete Book</th>
+        </tr>
+      </thead>
+      <tbody id="showAllBooksInDeleteBook">
+      </tbody>
+    </table>
+  </div>
+  <footer class="footer mt-auto py-3 bg-color-green text-center">
+      <div class="container">
+        <span >@2021 Bookstore</span>
+      </div>
+  </footer>
 </body>
 </html>

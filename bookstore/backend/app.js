@@ -123,7 +123,15 @@ app.post('/updateBook/:id', (req, res) => {
 });
 
 // Delete Book
-app.post('/deleteBook', (req, res) => {});
+app.get('/deleteBook/:id', (req, res) => {
+  var bookId = req.params.id;
+  booksInfoJSON = booksInfoJSON.filter(function( obj ) {
+    return obj.id !== bookId;
+  });
+  books = JSON.stringify(booksInfoJSON);
+  fs.writeFileSync('json/books.json', books);
+  res.json({"result": true}); 
+});
 
 
 // Assigning address to the express & telling express 
