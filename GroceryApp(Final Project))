@@ -1,0 +1,22 @@
+Front-End:
+  => Technology: HTML5, CSS3, Bootstrap, JS, jQuery.
+  => Functionalities:
+    * Login
+    * Registration
+    * Home(display all the groceries)
+    * Add Grocery
+    * Update Grocery
+    * Delete Grocery
+    
+Back-End:
+  => Technology: NodeJs, ExpressJs
+  => Functionalities:
+    * Login API
+    * Registration API
+    * Home API
+    * Add Grocery API
+    * Update Grocery API
+    * Delete Grocery API
+    
+NOTE: All the functionalities has been explained in the BookStore App.
+    
