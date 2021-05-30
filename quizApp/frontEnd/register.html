@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">Quiz-App</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link active" aria-current="page" href="#">Register</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="form-signin">
+        <form>
+          <img class="mb-4" src="imgs/logo.jpeg" alt="" width="80" height="75">
+          <h1 class="h3 mb-3 fw-normal">Please register</h1>
+      
+          <div class="form-floating" style="margin-bottom: 1rem;">
+            <input type="text" class="form-control" id="registerInput" placeholder="Username">
+            <label for="registerInput">Username</label>
+          </div>
+          <div class="form-floating" style="margin-bottom: 1rem;">
+            <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+            <label for="registerPassword">Password</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="button" id="register">Register</button>
+          <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+        </form>
+      </main>
+
+      <footer class="mt-auto text-white-50">
+        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>
